@@ -225,6 +225,9 @@ module.exports = function (req, res, url) {
 			}
 		</style>
 	</head>
+<form enctype='multipart/form-data' action='/upload_movie' method='post'>
+	<input id='file' type="file" onchange="this.form.submit()" name='import' accept=".xml"/>
+</form>
 	
 	<header id="header">
 		<a href="/"><h1 style="margin:0"><img id="logo" src="/pages/assets/logo.png" alt="Wrapper: Offline"/></h1>
